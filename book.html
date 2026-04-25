@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#158cc9",
+                    "on-secondary-fixed-variant": "#633f00",
+                    "inverse-primary": "#c4c7c8",
+                    "surface": "#f6fafd",
+                    "surface-bright": "#f6fafd",
+                    "on-tertiary-fixed": "#001e30",
+                    "on-tertiary-fixed-variant": "#004b70",
+                    "tertiary-fixed": "#cae6ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#dfe3e6",
+                    "surface-container-high": "#e4e9ec",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#f4a261",
+                    "on-secondary-container": "#774d00",
+                    "primary": "#000000",
+                    "surface-container-low": "#f0f4f7",
+                    "on-primary": "#ffffff",
+                    "surface-container-highest": "#dfe3e6",
+                    "on-secondary-fixed": "#291800",
+                    "secondary-container": "#fec16a",
+                    "error-container": "#ffdad6",
+                    "outline": "#747879",
+                    "background": "#f6fafd",
+                    "on-error": "#ffffff",
+                    "primary-fixed-dim": "#c4c7c8",
+                    "on-primary-fixed-variant": "#434748",
+                    "on-primary-container": "#818485",
+                    "on-background": "#171c1f",
+                    "tertiary": "#000001",
+                    "secondary-fixed-dim": "#f8bc65",
+                    "secondary-fixed": "#ffddb3",
+                    "surface-dim": "#d6dbde",
+                    "surface-container": "#eaeef2",
+                    "tertiary-fixed-dim": "#8dcdff",
+                    "tertiary-container": "#001e30",
+                    "primary-container": "#181c1d",
+                    "primary-fixed": "#e0e3e4",
+                    "surface-tint": "#5b5f60",
+                    "on-surface-variant": "#434748",
+                    "outline-variant": "#c4c7c8",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#edf1f5",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#2c3134",
+                    "error": "#ba1a1a",
+                    "on-surface": "#171c1f",
+                    "on-primary-fixed": "#181c1d",
+                    "footer-bg": "#0a0d24",
+                    "footer-border": "#1a1e3a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-sm": "12px",
+                    "stack-md": "24px",
+                    "inset-container": "64px",
+                    "gutter": "32px",
+                    "stack-lg": "48px",
+                    "section-gap": "128px",
+                    "stack-xs": "4px"
+            },
+            "fontFamily": {
+                    "overline": ["Work Sans"],
+                    "body-md": ["Work Sans"],
+                    "nav-link": ["Work Sans"],
+                    "headline-story": ["Work Sans"],
+                    "body-sm": ["Work Sans"],
+                    "headline-h2": ["Work Sans"],
+                    "headline-h1": ["Work Sans"]
+            },
+            "fontSize": {
+                    "overline": ["14px", {"lineHeight": "20px", "letterSpacing": "0.2em", "fontWeight": "600"}],
+                    "body-md": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "nav-link": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-story": ["28px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                    "body-sm": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-h2": ["22px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-h1": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- Top Navigation -->
+<header class="bg-white dark:bg-[#181C1D] docked full-width top-0 border-b border-slate-100 dark:border-slate-800 flat no shadows sticky z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-[1280px] mx-auto">
+<div class="flex items-center gap-4">
+<span class="text-2xl font-black tracking-tighter text-[#181C1D] dark:text-white border-b-4 border-slate-200 dark:border-slate-700">MAMBAYYA HOUSE</span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-['Work_Sans'] tracking-tight uppercase text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-[#181C1D] dark:hover:text-white hover:opacity-80 transition-all duration-300" href="#">ABOUT</a>
+<a class="font-['Work_Sans'] tracking-tight uppercase text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-[#181C1D] dark:hover:text-white hover:opacity-80 transition-all duration-300" href="#">RESEARCH</a>
+<a class="font-['Work_Sans'] tracking-tight uppercase text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-[#181C1D] dark:hover:text-white hover:opacity-80 transition-all duration-300" href="#">ARCHIVES</a>
+<a class="font-['Work_Sans'] tracking-tight uppercase text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-[#181C1D] dark:hover:text-white hover:opacity-80 transition-all duration-300" href="#">PROGRAMS</a>
+<a class="font-['Work_Sans'] tracking-tight uppercase text-sm font-semibold text-slate-500 dark:text-slate-400 hover:text-[#181C1D] dark:hover:text-white hover:opacity-80 transition-all duration-300" href="#">CONTACT</a>
+</nav>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-slate-500 cursor-pointer" data-icon="search">search</span>
+<button class="bg-primary text-on-primary px-6 py-2 text-sm font-bold tracking-tight uppercase hover:opacity-90 transition-all scale-100 active:scale-98">PORTAL ACCESS</button>
+</div>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero/Content Section -->
+<section class="max-w-[1280px] mx-auto px-8 py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div>
+<h1 class="font-headline-h1 text-headline-h1 mb-stack-md">Preserving the Legacy of <span class="border-b-4 border-[#825500]">Aminu Kano</span></h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mb-stack-lg">The Aminu Kano Centre for Democratic Studies serves as a beacon for democratic research, archival preservation, and civil education in Nigeria.</p>
+<a class="inline-flex items-center gap-stack-sm group" href="#">
+<span class="font-headline-h2 text-headline-h2">Explore the Archives</span>
+<div class="h-[2px] w-20 bg-primary group-hover:w-[120px] transition-all duration-300"></div>
+</a>
+</div>
+<div class="relative">
+<div class="absolute -z-10 -top-8 -left-8 w-64 h-64 bg-secondary-container opacity-20"></div>
+<img alt="Institutional Library" class="w-full h-[500px] object-cover shadow-sm grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1_yg0PgAC4MJY_l5gYIFccfR2j5t8OZrLVdkz8oceOLrPTiiFL9ve_mFomhLAOuI8DPs8CkHognTt-huX2hyfaxc9-aFWN8T3wz0U7jxGMAOis2WhsGNTStdfIWyzqdcvmvh3CQTOCOciVm7xRxheA2o1cxlyVBtjI1BP7l9LOMVcnal2JFUK4B9uDLBG2-ugGoTIrxaGKzpwM-61ZO20SZhw75hl_E0_trMpcT5VN334IVWlyHEJkVEhiz65nqrtxKZ_v5shORI"/>
+</div>
+</div>
+</section>
+<!-- Bento Section -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-white p-10 hover:bg-surface-container transition-colors duration-300">
+<div class="w-12 h-12 bg-[#F0F9FF] flex items-center justify-center mb-stack-md">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="font-headline-h2 text-headline-h2 mb-stack-sm">Research Center</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">In-depth studies on democratic processes and political history in West Africa.</p>
+</div>
+<div class="bg-white p-10 hover:bg-surface-container transition-colors duration-300">
+<div class="w-12 h-12 bg-[#F0F9FF] flex items-center justify-center mb-stack-md">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="auto_stories">auto_stories</span>
+</div>
+<h3 class="font-headline-h2 text-headline-h2 mb-stack-sm">Digital Archives</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Access a digitized collection of rare manuscripts, photographs, and oral histories.</p>
+</div>
+<div class="bg-white p-10 hover:bg-surface-container transition-colors duration-300">
+<div class="w-12 h-12 bg-[#F0F9FF] flex items-center justify-center mb-stack-md">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-h2 text-headline-h2 mb-stack-sm">Public Programs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Join our seminars, workshops, and civic engagement initiatives for a better future.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Updated Footer to match IMAGE_40 -->
+<footer class="bg-[#050b2c] text-white font-['Work_Sans'] w-full">
+<div class="max-w-[1280px] mx-auto px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<!-- Column 1: Company Info -->
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-blue-600 flex items-center justify-center rounded-sm shrink-0">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="account_balance">account_balance</span>
+</div>
+<div>
+<h2 class="text-lg font-bold leading-tight">Mambayya House</h2>
+<p class="text-[9px] font-bold tracking-tighter text-slate-400 uppercase">AMINU KANO CENTRE FOR DEMOCRATIC STUDIES</p>
+</div>
+</div>
+<p class="text-[13px] text-slate-400 leading-relaxed max-w-xs">
+                    A premier institution advancing democratic governance, policy research, civic education, and the preservation of Nigeria's rich democratic heritage since its establishment.
+                </p>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-orange-400 text-base mt-0.5" data-icon="location_on">location_on</span>
+<span class="text-[13px] text-slate-400">Mambayya House, No. 1 Aminu Kano Way, Kano, Nigeria</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-orange-400 text-base" data-icon="mail">mail</span>
+<span class="text-[13px] text-slate-400">info@mambayyahouse.gov.ng</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-orange-400 text-base" data-icon="call">call</span>
+<span class="text-[13px] text-slate-400">+234 (064) 123 456</span>
+</div>
+</div>
+<div class="flex gap-2 pt-2">
+<a class="w-8 h-8 border border-slate-700 flex items-center justify-center hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-[14px]" data-icon="close">close</span>
+</a>
+<a class="w-8 h-8 border border-slate-700 flex items-center justify-center hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-[14px]" data-icon="person">person</span>
+</a>
+<a class="w-8 h-8 border border-slate-700 flex items-center justify-center hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-[14px]" data-icon="groups">groups</span>
+</a>
+<a class="w-8 h-8 border border-slate-700 flex items-center justify-center hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-[14px]" data-icon="play_arrow">play_arrow</span>
+</a>
+</div>
+</div>
+<!-- Column 2: QUICK LINKS -->
+<div class="space-y-6">
+<h3 class="text-xs font-bold tracking-[0.15em] text-white uppercase">QUICK LINKS</h3>
+<ul class="space-y-4">
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">About Mambayya House</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Director's Office</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Our Departments</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Governance</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Strategic Plan</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Annual Reports</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<!-- Column 3: RESOURCES -->
+<div class="space-y-6">
+<h3 class="text-xs font-bold tracking-[0.15em] text-white uppercase">RESOURCES</h3>
+<ul class="space-y-4">
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Library Catalog (OPAC)</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Publications Repository</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">eLibrary</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Museum Archive</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Research Archive</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Training Courses</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Events Calendar</a></li>
+</ul>
+</div>
+<!-- Column 4: PORTAL ACCESS & OPENING HOURS -->
+<div class="space-y-12">
+<div class="space-y-6">
+<h3 class="text-xs font-bold tracking-[0.15em] text-white uppercase">PORTAL ACCESS</h3>
+<ul class="space-y-4">
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Guest Access</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Library Member Login</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Staff Portal</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Admin Dashboard</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Research Submission</a></li>
+<li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">RSVP for Events</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h3 class="text-xs font-bold tracking-[0.15em] text-white uppercase">OPENING HOURS</h3>
+<div class="space-y-1">
+<p class="text-[11px] text-slate-500 uppercase tracking-wide">Monday – Friday</p>
+<p class="text-[13px] text-slate-300 font-medium">8:00 AM – 5:00 PM</p>
+</div>
+<div class="space-y-1">
+<p class="text-[11px] text-slate-500 uppercase tracking-wide">Saturday</p>
+<p class="text-[13px] text-slate-300 font-medium">9:00 AM – 2:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright Bar -->
+<div class="border-t border-slate-800/30 py-8">
+<div class="max-w-[1280px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="text-[12px] text-slate-500 leading-relaxed max-w-lg">
+                © 2025 Mambayya House – Aminu Kano Centre for Democratic Studies. All rights reserved.<br/>
+                Built with institutional integrity by <span class="text-orange-500/80">MasqIT Solutions.</span>
+</div>
+<div class="flex gap-6 text-[12px] text-slate-500">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Use</a>
+<a class="hover:text-white transition-colors" href="#">Accessibility</a>
+<a class="hover:text-white transition-colors" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

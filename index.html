@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mambaya House | Aminu Kano Centre For Democratic Studies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#e8eff7",
+                        "surface-variant": "#dce3eb",
+                        "surface-dim": "#d4dbe3",
+                        "outline": "#6e7881",
+                        "on-secondary-fixed-variant": "#244a64",
+                        "on-tertiary-container": "#63000e",
+                        "surface-container-low": "#edf4fc",
+                        "on-primary-container": "#00314a",
+                        "surface-tint": "#006492",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#a6cbe9",
+                        "on-primary-fixed-variant": "#004b6f",
+                        "on-tertiary-fixed-variant": "#8c1520",
+                        "secondary-fixed": "#c9e6ff",
+                        "surface-container-highest": "#dce3eb",
+                        "outline-variant": "#bec8d2",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#009ee2",
+                        "inverse-on-surface": "#eaf1f9",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#410006",
+                        "primary-fixed-dim": "#8aceff",
+                        "on-error-container": "#93000a",
+                        "background": "#f6faff",
+                        "inverse-primary": "#8aceff",
+                        "tertiary": "#ae2f34",
+                        "primary": "#006492",
+                        "tertiary-fixed": "#ffdad8",
+                        "on-surface-variant": "#3e4850",
+                        "on-secondary-container": "#3e637d",
+                        "surface": "#f6faff",
+                        "primary-fixed": "#c9e6ff",
+                        "on-background": "#151c22",
+                        "secondary-container": "#b9dffe",
+                        "surface-bright": "#f6faff",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#001e2f",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "on-surface": "#151c22",
+                        "inverse-surface": "#2a3137",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#001e2f",
+                        "secondary": "#3d627d",
+                        "surface-container-high": "#e2e9f1",
+                        "tertiary-container": "#f76565"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "32px",
+                        "stack-sm": "12px",
+                        "stack-xs": "4px",
+                        "stack-lg": "48px",
+                        "inset-container": "64px",
+                        "stack-md": "24px"
+                    },
+                    "fontFamily": {
+                      "headline": ["Newsreader"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+                },
+                
+            },
+        }
+    </script>
+<style>
+        @layer base {
+            * {
+                @apply m-0 p-0;
+                box-sizing: border-box;
+            }
+            html, body {
+                @apply w-full h-full m-0 p-0;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #f6faff;
+            color: #151c22;
+        }
+        .glass-card {
+            background: rgba(246, 250, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.45));
+        }
+        .hero-gradient2 {
+            background: linear-gradient(to right, #0ea5e9 0%, #00507F 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .long-arrow-line {
+            height: 1px;
+            width: 80px;
+            background-color: #0086C3;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 16px;
+            position: relative;
+        }
+        .long-arrow-line::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -4px;
+            width: 8px;
+            height: 8px;
+            border-top: 1px solid #0086C3;
+            border-right: 1px solid #0086C3;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="bg-light text-on-surface">
+        <!-- TopNavBar Navigation Shell -->
+        <header class="fixed top-0 left-0 w-full z-50 bg-[#f0f8ff] border-b border-slate-200"><div class="flex justify-between items-center w-full px-8 py-4">
+                <!-- Branding Section -->
+                <div class="flex items-center gap-4">
+                    <img alt="Mambaya House Logo" class="h-12 w-auto object-contain" src="image 93.png" />
+                    <div class="flex flex-col">
+                        <span class="text-2xl md:text-xl font-black text-[#f87171] tracking-tight leading-none uppercase">MAMBAYA
+                            HOUSE</span>
+                        <span class="text-[10px] md:text-[12px] font-medium text-[#166534] tracking-tight mt-1">Aminu Kano Centre For
+                            Democratic Studies</span>
+                    </div>
+                </div>
+                <!-- Navigation Links Cluster -->
+                <nav class="hidden lg:flex items-center gap-6">
+                    <a class="bg-[#0ea5e9] text-white rounded-lg px-6 py-2.5 transition-all duration-300 font-semibold text-[14px] uppercase tracking-wide shadow-sm"
+                        href="#">HOME</a>
+                    <a class="text-slate-600 px-2 py-2 hover:text-sky-600 font-semibold text-[14px] uppercase tracking-wide transition-colors"
+                        href="#">ABOUT US</a>
+                    <a class="text-slate-600 px-2 py-2 hover:text-sky-600 font-semibold text-[14px] uppercase tracking-wide transition-colors"
+                        href="#">Library</a>
+                    <a class="text-slate-600 px-2 py-2 hover:text-sky-600 font-semibold text-[14px] uppercase tracking-wide transition-colors"
+                        href="#">PUBLICATIONS</a>
+                    <a class="text-slate-600 px-2 py-2 hover:text-sky-600 font-semibold text-[14px] uppercase tracking-wide transition-colors"
+                        href="#">DEPARTMENT</a>
+                    <a class="text-slate-600 px-2 py-2 hover:text-sky-600 font-semibold text-[14px] uppercase tracking-wide transition-colors"
+                        href="#">EVENTS</a>
+                    <a class="text-slate-600 px-2 py-2 hover:text-sky-600 font-semibold text-[14px] uppercase tracking-wide transition-colors"
+                        href="#">DIGITAL RESOURCES</a>
+                </nav>
+                <!-- Mobile Menu Trigger -->
+                <button class="lg:hidden text-sky-900">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </header>
+        <main class="pt-28  max-w-full mx-auto">
+            <!-- Hero Section - Academic Archivist Aesthetic -->
+            <section class="relative min-h-[921px] w-full flex items-center pt-20 overflow-hidden bg-on-surface">
+    
+    <!-- Background -->
+    <div class="absolute inset-0 z-0">
+        <img class="w-full h-full object-cover"
+            src="admin.png"
+            alt="Traditional university administrative building at dusk" />
+        <div class="absolute inset-0 hero-gradient"></div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="relative z-10 max-w-[1440px] px-6 w-full pb-10 mt-10 flex flex-col md:flex-row justify-between gap-8 items-center md:items-start text-center md:text-left">
+        
+        <!-- LEFT SIDE -->
+        <div class="flex-1 max-w-xl text-left">
+            <p class="text-[#4ade80] font-medium text-sm md:text-lg mb-2 tracking-wide">
+                -Aminu Kano Centre For Democratic Studies
+            </p>
+
+            <h1 class="text-3xl md:text-8xl font-extrabold leading-tight tracking-tighter mb-4 whitespace-nowrap">
+                <span class="text-[#ae2f34]">MAMBAYYA</span>
+                <span class="text-white"> HOUSE</span>
+            </h1>
+
+            <p class="font-serif italic text-2xl text-white mb-6">
+                Where Knowledge meets Democratic purpose
+            </p>
+
+            <p class="text-white/90 text-lg mb-10 max-w-xl leading-relaxed">
+                Dedicated to the advancement of democratic values, scholarly research, and the preservation of Nigeria's
+                political history through the legacy of Mallam Aminu Kano.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-8">
+                <button class="bg-[#ffb74d] text-on-background px-8 py-4 rounded-md font-bold text-lg hover:brightness-110 transition-all shadow-lg active:scale-95">
+                    Explore the Centre
+                </button>
+
+                <a class="text-white border-b-2 border-white pb-1 font-medium hover:text-white/80 transition-colors" href="#">
+                    Browse publication
+                </a>
+            </div>
+        </div>
+
+        
+            <!-- Mobile-only controls (inside hero) -->
+            <div class="block md:hidden w-full mt-8">
+                <div class="max-w-[500px] mx-auto w-[92%]">
+                    <div class="grid grid-cols-1 gap-3">
+                        <div class="flex items-center justify-between bg-[#E5E5E5] text-black px-4 py-3 rounded-lg w-full cursor-pointer shadow-md">
+                            <span class="text-base font-medium">Search</span>
+                            <span class="material-symbols-outlined text-gray-600">expand_more</span>
+                        </div>
+                        <button class="bg-[#009EE2] text-white w-full px-6 py-3 rounded-md font-bold text-lg whitespace-nowrap hover:bg-[#007cb3] transition-all active:scale-95">
+                            Portal Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            <!-- Statistics Section - overlaps hero bottom -->
+<section class="max-w-[90%] mx-auto px-8 -mt-10 relative z-20">
+    <div class="bg-surface-container-lowest rounded-xl shadow-lg border border-outline-variant/10">
+        <div class="grid grid-cols-1 md:grid-cols-4 items-center">
+            <!-- Metric 1 -->
+            <div class="flex flex-col items-center justify-center py-12 px-6 text-center relative group">
+                <span class="text-[#009EE2] text-5xl font-extrabold tracking-tighter mb-2">40+</span>
+                <span class="text-[#151c22] font-medium text-sm md:text-base tracking-normal">Years of Service</span>
+                <!-- Vertical Divider -->
+                <div class="hidden md:block absolute right-0 top-1/4 bottom-1/4 w-[1px] bg-outline-variant/30"></div>
+            </div>
+            <!-- Metric 2 -->
+            <div class="flex flex-col items-center justify-center py-12 px-6 text-center relative group">
+                <span class="text-[#009EE2] text-5xl font-extrabold tracking-tighter mb-2">12k+</span>
+                <span class="text-[#151c22] font-medium text-sm md:text-base tracking-normal">Library Volumes</span>
+                <!-- Vertical Divider -->
+                <div class="hidden md:block absolute right-0 top-1/4 bottom-1/4 w-[1px] bg-outline-variant/30"></div>
+            </div>
+            <!-- Metric 3 -->
+            <div class="flex flex-col items-center justify-center py-12 px-6 text-center relative group">
+                <span class="text-[#009EE2] text-5xl font-extrabold tracking-tighter mb-2">380+</span>
+                <span class="text-[#151c22] font-medium text-sm md:text-base tracking-normal">Publications</span>
+                <!-- Vertical Divider -->
+                <div class="hidden md:block absolute right-0 top-1/4 bottom-1/4 w-[1px] bg-outline-variant/30"></div>
+            </div>
+            <!-- Metric 4 -->
+            <div class="flex flex-col items-center justify-center py-12 px-6 text-center group">
+                <span class="text-[#009EE2] text-5xl font-extrabold tracking-tighter mb-2">200+</span>
+                <span class="text-[#151c22] font-medium text-sm md:text-base tracking-normal">Training Programmes</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24 items-start mt-24 max-w-[90%] mx-auto px-8">
+        <!-- Left Column: Portrait Image -->
+        <div class="md:col-span-5 lg:col-span-4">
+        <div class="relative overflow-hidden rounded-lg shadow-soft aspect-[4/5]">
+        <img alt="Professional portrait of Professor Habu Mohammed in formal academic attire" class="w-full h-full object-cover hover:grayscale-0 transition-all duration-700" data-alt="Dignified portrait of an academic director in traditional attire standing against a neutral scholarly background with soft window lighting" src="Director.jpeg"/>
+        </div>
+        </div>
+        <!-- Right Column: Welcome Message -->
+        <div class="md:col-span-7 lg:col-span-8 flex flex-col items-start">
+<h2 class="text-[#009EE2] font-['Work_Sans'] text-3xl md:text-4xl font-semibold mb-8">Director's Welcome</h2>
+<!-- Blue Accent Line -->
+<div class="space-y-6 text-on-surface-variant leading-relaxed font-normal text-lg max-w-4xl"><p>Mambayya House stands as a living monument to the democratic ideals that Mallam Aminu Kano championed throughout his distinguished life. We are committed to nurturing a new generation of democratic leaders, policymakers, and scholars who will carry forward the torch of good governance, civic responsibility, and social justice. Through our research, training, and archival programmes, we continue to build a repository of knowledge that serves Nigeria and the broader African continent.</p><p>Our library, museum, research centre, and e-learning platforms represent our dedication to making democratic knowledge accessible to all — from students and academics to government officials and civil society leaders.</p></div>
+<!-- Signature Block -->
+<hr class="border-t border-gray-200 w-full mb-8"/><div class="mt-12 space-y-1">
+<div class="text-[#009EE2] font-bold text-2xl tracking-tight">
+                        Prof. Habu Mohammed.
+                    </div>
+<div class="text-on-surface-variant opacity-70 text-sm font-medium tracking-wide">
+                        Executive Director, Mambayya House – Aminu Kano Centre for Democratic Studies.
+                    </div>
+</div>
+</div>
+</section>
+</div>
+</section>
+<section class="w-full py-4 mt-10 mb-2">
+    <div class="max-w-full px-0 w-full py-8" style="background: linear-gradient(to right, #0ea5e9 0%, #00314a 100%);">
+        <h1 class="font-[Newsreader] text-5xl md:text-5xl font-semi-bold text-white max-w-2xl leading-tight px-12">Our
+            Core<br />Pillars of Work</h1>
+    </div>
+
+        <!-- Feature Cards Grid with Horizontal Scroll -->
+        <section class="w-full pt-[132px] pb-[160px] overflow-hidden">
+            <div class="max-w-full px-8">
+                <div class="flex overflow-x-auto no-scrollbar gap-12 pb-4">
+                    <!-- Card 1 -->
+                    <div class="flex-none w-[calc(27.778%-32px)] group shadow-md hover:shadow-xl transition-shadow duration-300 p-6 rounded-2xl bg-white">
+                        <div class="w-full overflow-hidden rounded-2xl mb-8 aspect-square">
+                            <img alt="Library research" class="w-full h-full object-cover"
+                                src="pillars3.png" />
+                        </div>
+                        <h3 class="font-title-card text-[20px] text-[#009EE2] font-bold mb-3">Library &amp;
+                            Democratic Research</h3>
+                        <p class="font-body-main text-[16px] text-brand-body-text leading-[1.4]">Producing rigorous
+                            policy-relevant research on governance, elections, federalism, and constitutional
+                            development that informs decision-making at all levels of government.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="flex-none w-[calc(27.778%-32px)] group shadow-md hover:shadow-xl transition-shadow duration-300 p-6 rounded-2xl bg-white">
+                        <div class="w-full overflow-hidden rounded-2xl mb-8 aspect-square">
+                            <img alt="Civic education" class="w-full h-full object-cover"
+                                src="pillars2.png" />
+                        </div>
+                        <h3 class="font-title-card text-[20px] text-[#009EE2] font-bold mb-3">Civic Education</h3>
+                        <p class="font-body-main text-[16px] text-brand-body-text leading-[1.4]">Empowering citizens
+                            with the knowledge and tools to actively participate in democratic processes — from voter
+                            education to youth leadership development.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="flex-none w-[calc(27.778%-32px)] group shadow-md hover:shadow-xl transition-shadow duration-300 p-6 rounded-2xl bg-white">
+                        <div class="w-full overflow-hidden rounded-2xl mb-8 aspect-square">
+                            <img alt="Training session" class="w-full h-full object-cover"
+                                src="pillars3.png" />
+                        </div>
+                        <h3 class="font-title-card text-[20px] text-[#009EE2] font-bold mb-3">Training</h3>
+                        <p class="font-body-main text-[16px] text-brand-body-text leading-[1.4]">Producing rigorous
+                            policy-relevant research on governance, elections, federalism, and constitutional
+                            development that informs decision-making at all levels of government.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="flex-none w-[calc(27.778%-32px)] group shadow-md hover:shadow-xl transition-shadow duration-300 p-6 rounded-2xl bg-white">
+                        <div class="w-full overflow-hidden rounded-2xl mb-8 aspect-square">
+                            <img alt="Training session" class="w-full h-full object-cover"
+                                src="pillars1.png" />
+                        </div>
+                        <h3 class="font-title-card text-[20px] text-[#009EE2] font-bold mb-3">Training</h3>
+                        <p class="font-body-main text-[16px] text-brand-body-text leading-[1.4]">Producing rigorous
+                            policy-relevant research on governance, elections, federalism, and constitutional
+                            development that informs decision-making at all levels of government.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</section>
+
+<!-- About Section -->
+<section class="w-full px-4 sm:px-6 md:px-10 lg:px-gutter py-10 min-h-screen">
+    <!-- Responsive Header Section -->
+    <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-32 items-start mb-16 md:mb-24">
+        <!-- Image and Card: Stack on mobile/medium, side by side on desktop -->
+        <div class="w-full flex flex-col items-center lg:block order-1 lg:order-1 mb-10 lg:mb-0">
+            <div class="rounded-xl overflow-hidden shadow-xl w-full max-w-[400px] md:max-w-[700px] lg:max-w-[1100px] lg:h-[750px] relative mx-auto">
+                <img alt="Institutional Architecture" class="w-full h-full object-cover" src="about.png" />
+            </div>
+            <!-- Card: visible on all screens, position absolute on desktop, static on mobile/medium -->
+            <div class="w-full flex justify-center lg:justify-end relative z-20">
+                <div class="mt-6 lg:mt-0 lg:absolute lg:bottom-0 lg:right-0 lg:translate-x-1/2 lg:translate-y-1/2 w-full max-w-[320px] h-auto rounded-lg -z-10 flex justify-center lg:block transition-transform duration-300">
+                    <div class="bg-white w-full max-w-[240px] aspect-[252/340] flex flex-col items-center justify-center p-8 shadow-sm border border-slate-100 rounded-lg text-center">
+                        <div class="mb-2">
+                            <span class="text-[48px] md:text-[60px] font-bold leading-none text-[#0ea5e9] tracking-tighter">40+</span>
+                        </div>
+                        <div class="mb-6 md:mb-8">
+                            <h2 class="text-[16px] md:text-[18px] font-semibold text-[#1e293b] uppercase tracking-normal leading-tight">Years of Service</h2>
+                        </div>
+                        <div class="w-full max-w-[200px] h-[1px] bg-slate-200 mb-6 md:mb-8"></div>
+                        <div class="mb-2">
+                            <span class="text-[48px] md:text-[60px] font-bold leading-none text-[#0ea5e9] tracking-tight">KANO</span>
+                        </div>
+                        <div>
+                            <p class="text-[16px] md:text-[18px] font-semibold text-[#1e293b] uppercase tracking-normal">Centre of excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content now on the right -->
+        <div class="order-2 lg:order-2 space-y-12 md:space-y-16 w-full">
+            <section class="max-w-4xl mx-auto">
+                <h3 class="text-xl md:text-xl font-medium text-headline-h3 text-[#F8B633] uppercase tracking-wider ">
+                    ABOUT MAMBAYYA HOUSE
+                </h3>
+                <div class="relative mb-stack-md">
+                    <h1 class="text-3xl md:text-4xl font-semibold text-headline-h1 ">
+                        A Centre Built on <br />
+                       Democratic Heritage
+                    </h1>
+                    <div class="h-2 w-28 bg-[#F8B633] mt-stack-sm rounded-r-full"></div>
+                </div>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Named after the residence of Mallam Aminu Kano, a towering figure in Nigeria's democratic history,
+                    Mambayya House serves as a centre for research, dialogue, and civic education. Established to
+                    honor his legacy, the centre promotes democratic values through rigorous scholarship, public
+                    discourse, and innovative learning programmes that bridge the gap between academic research and
+                    practical governance.
+                </p>
+            </section>
+            <section class="grid grid-cols-1 gap-10 md:gap-16">
+                <div class="flex flex-col md:flex-row gap-4 md:gap-6 group">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-16 h-16 bg-[#F0F9FF] rounded-xl flex items-center justify-center transition-all group-hover:bg-[#E0F2FE]">
+                            <span class="material-symbols-outlined text-3xl">biotech</span>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <h2 class="font-semibold text-headline-h2 text-xl md:text-2xl ">
+                            Policy Research
+                        </h2>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Producing rigorous academic and policy research on democracy, governance, and public policy
+                            in Nigeria and Africa. Our research informs constitutional development, electoral reforms,
+                            and federalism studies that shape decision-making at all levels of government.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-4 md:gap-6 group">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-16 h-16 bg-[#F0F9FF] rounded-xl flex items-center justify-center transition-all group-hover:bg-[#E0F2FE]">
+                            <span class="material-symbols-outlined text-3xl">menu_book</span>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <h2 class="font-semibold text-headline-h2 text-xl md:text-2xl ">
+                            Knowledge Preservation
+                        </h2>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Archiving Nigeria's democratic history through our museum, digital archive, and library
+                            collections. We preserve crucial documents, artifacts, and oral histories that tell the
+                            story of Nigeria's journey toward democratic governance and civic participation.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-4 md:gap-6 group">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-16 h-16 bg-[#F0F9FF] rounded-xl flex items-center justify-center transition-all group-hover:bg-[#E0F2FE]">
+                            <span class="material-symbols-outlined text-3xl">handshake</span>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <h2 class="font-semibold text-headline-h2 text-xl md:text-2xl ">
+                            Capacity Building
+                        </h2>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant">
+                            Training civic leaders, government officials, and civil society through structured
+                            programmes and e-learning. Our comprehensive training initiatives empower stakeholders
+                            with the knowledge and skills necessary to strengthen democratic institutions and processes.
+                        </p>
+                    </div>
+                </div>
+                <!-- Primary Story Link -->
+            <a class="group flex items-center w-fit py-4 pr-8 mt-8 self-start transition-all duration-300 transform hover:translate-x-2 underline decoration-[#0ea5e9] decoration-2 decoration-solid" href="#">
+                <span class="font-headline-h2 text-[28px] text-[#0ea5e9] font-medium tracking-tight">
+                    Read our full story
+                </span>
+                <div class="long-arrow-line group-hover:w-[120px] transition-all duration-500"></div>
+            </a>
+            </section>
+            
+        </div>
+    </div>
+</section>
+
+        <section class="w-full mx-auto px-0 py-10 bg-white">
+            <!-- Publications Section -->
+            <section class="w-full ">
+                <!-- Header -->
+                <div class="flex flex-col md:flex-row px-6 md:px-12 justify-between items-end mb-16">
+                    <div class="space-y-4">
+                        <span class="text-xl md:text-xl font-medium text-headline-h3 uppercase text-[#F8B633] tracking-wider">KNOWLEDGE REPOSITORY</span>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-headline-h1">Latest Publications</h2>
+                        <div class="h-2 w-28 bg-[#F8B633] mt-2 rounded-full"></div>
+                    </div>
+                    <a class="group flex items-center gap-3 text-[#0ea5e9] font-semibold text-lg" href="#">
+                        <span>View All Publications</span>
+                        <span class="material-symbols-outlined text-[24px]">trending_flat</span>
+                    </a>
+                </div>
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-24 px-12 md:px-12">
+                    <!-- Card 1: Journal -->
+                    <article
+                        class="bg-white border border-neutral-100 rounded-2xl overflow-hidden shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+                        <div class="h-4 bg-[#0ea5e9] w-full"></div>
+                        <div class="p-8 flex flex-col h-full">
+                            <div class="flex justify-between items-center mb-8">
+                                <span
+                                    class="bg-[#0ea5e9] text-white px-4 py-2 text-xs font-bold tracking-widest uppercase rounded">JOURNAL</span>
+                                <span class="text-neutral-400 font-bold border border-neutral-100 px-3 py-1 rounded">2024</span>
+                            </div>
+                            <h3 class="text-headline-h2 text-neutral-800 mb-6 leading-tight">Democratic Consolidation in
+                                Northern Nigeria: A Comparative Analysis</h3>
+                            <p class="italic text-neutral-600 text-sm mb-8 font-medium">Prof. Ibrahim Garba, Dr. Fatima Usman
+                            </p>
+                            <p class="text-neutral-500 text-base leading-relaxed mb-12 flex-grow">This paper examines the
+                                trajectories of democratic consolidation across six states in Northern Nigeria, analysing
+                                institutional factors, civil society.....</p>
+                            <div class="flex justify-between items-center pt-6 border-t border-neutral-50">
+                                <div class="text-neutral-500 text-sm font-semibold">Vol 12   12 Pages</div>
+                                <a class="flex items-center gap-1 text-red-400 font-semibold text-sm group border border-neutral-100 px-3 py-1 rounded"
+                                    href="#">
+                                    <span>Pdf</span>
+                                    <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Card 2: Policy Brief -->
+                    <article
+                        class="bg-white border border-neutral-100 rounded-2xl overflow-hidden shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+                        <div class="h-4 bg-blue-800 w-full"></div>
+                        <div class="p-8 flex flex-col h-full">
+                            <div class="flex justify-between items-center mb-8">
+                                <span
+                                    class="bg-blue-800 text-white px-4 py-2 text-xs font-bold tracking-widest uppercase rounded">POLICY
+                                    BRIEF</span>
+                                <span class="text-neutral-400 font-bold border border-neutral-100 px-3 py-1 rounded">2024</span>
+                            </div>
+                            <h3 class="text-headline-h2 text-neutral-800 mb-6 leading-tight">Electoral Reform and the Path to
+                                Institutional Credibility</h3>
+                            <p class="italic text-neutral-600 text-sm mb-8 font-medium">Prof. Ibrahim Garba, Dr. Fatima Usman
+                            </p>
+                            <p class="text-neutral-500 text-base leading-relaxed mb-12 flex-grow">An evidence-based policy brief
+                                recommending specific reforms to Nigeria's Independent National Electoral Commission (INEC)
+                                drawing on lessons</p>
+                            <div class="flex justify-between items-center pt-6 border-t border-neutral-50">
+                                <div class="text-neutral-500 text-sm font-semibold">Vol 12   12 Pages</div>
+                                <a class="flex items-center gap-1 text-red-400 font-semibold text-sm group border border-neutral-100 px-3 py-1 rounded"
+                                    href="#">
+                                    <span>Pdf</span>
+                                    <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Card 3: Book -->
+                    <article
+                        class="bg-white border border-neutral-100 rounded-2xl overflow-hidden shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+                        <div class="h-4 bg-neutral-800 w-full"></div>
+                        <div class="p-8 flex flex-col h-full">
+                            <div class="flex justify-between items-center mb-8">
+                                <span
+                                    class="bg-neutral-800 text-white px-4 py-2 text-xs font-bold tracking-widest uppercase rounded">BOOK</span>
+                                <span class="text-neutral-400 font-bold border border-neutral-100 px-3 py-1 rounded">2024</span>
+                            </div>
+                            <h3 class="text-headline-h2 text-neutral-800 mb-6 leading-tight">Democratic Consolidation in
+                                Northern Nigeria: A Comparative Analysis</h3>
+                            <p class="italic text-neutral-600 text-sm mb-8 font-medium">Prof. Ibrahim Garba, Dr. Fatima Usman
+                            </p>
+                            <p class="text-neutral-500 text-base leading-relaxed mb-12 flex-grow">This paper examines the
+                                trajectories of democratic consolidation across six states in Northern Nigeria, analysing
+                                institutional factors.....</p>
+                            <div class="flex justify-between items-center pt-6 border-t border-neutral-50">
+                                <div class="text-neutral-500 text-sm font-semibold">Vol 12   12 Pages</div>
+                                <a class="flex items-center gap-1 text-red-400 font-semibold text-sm group border border-neutral-100 px-3 py-1 rounded"
+                                    href="#">
+                                    <span>Pdf</span>
+                                    <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!--card 4-->
+                    <article
+                        class="bg-white border border-neutral-100 rounded-2xl overflow-hidden shadow-sm flex flex-col h-full hover:shadow-md transition-shadow">
+                        <div class="h-4 bg-neutral-800 w-full"></div>
+                        <div class="p-8 flex flex-col h-full">
+                            <div class="flex justify-between items-center mb-8">
+                                <span
+                                    class="bg-neutral-800 text-white px-4 py-2 text-xs font-bold tracking-widest uppercase rounded">POLICY</span>
+                                <span class="text-neutral-400 font-bold border border-neutral-100 px-3 py-1 rounded">2024</span>
+                            </div>
+                            <h3 class="text-headline-h2 text-neutral-800 mb-6 leading-tight">Policy Implications of Climate Change on Urban Development</h3>
+                            <p class="italic text-neutral-600 text-sm mb-8 font-medium">Dr. Amina Mohammed, Prof. Yusuf Adamu
+                            </p>
+                            <p class="text-neutral-500 text-base leading-relaxed mb-12 flex-grow">This paper explores the policy implications of climate change on urban development in West Africa, focusing on adaptation strategies.....</p>
+                            <div class="flex justify-between items-center pt-6 border-t border-neutral-50">
+                                <div class="text-neutral-500 text-sm font-semibold">Vol 12   12 Pages</div>
+                                <a class="flex items-center gap-1 font-semibold text-sm group border border-neutral-100 px-3 py-1 rounded"
+                                    href="#">
+                                    <span class="text-red-400">Pdf</span>
+                                    <span class="material-symbols-outlined text-sm text-gray-500">arrow_downward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- Statistics Section -->
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center py-12 gap-12 border-t border-neutral-100 px-12 md:px-12">
+                    <div class="flex flex-col md:flex-row gap-16">
+                        <div class="text-center md:text-left">
+                            <div class="text-6xl font-black font-Syne text-ref-blue leading-none mb-3 text-[#0ea5e9]">385+</div>
+                            <div class="text-sm font-bold text-neutral-800 uppercase tracking-wide">Total Publication</div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <div class="text-6xl font-black text-ref-blue leading-none mb-3 text-[#0ea5e9]">43+</div>
+                            <div class="text-sm font-bold text-neutral-800 uppercase tracking-wide">Journal Volume</div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <div class="text-6xl font-black text-ref-blue leading-none mb-3 text-[#0ea5e9]">4k+</div>
+                            <div class="text-sm font-bold text-neutral-800 uppercase tracking-wide">Total Books</div>
+                        </div>
+                    </div>
+                    <div class="flex-grow flex justify-end">
+                        <a class="group flex flex-col items-end gap-2" href="#">
+                            <div class="flex items-center gap-4 text-[#0ea5e9] font-bold text-xl uppercase tracking-tight">
+                                <span>Browse Full Repository</span>
+                                <span class="material-symbols-outlined text-3xl">trending_flat</span>
+                            </div>
+                            <div class="h-0.5 w-full bg-[#0ea5e9] group-hover:w-full transition-all duration-300"></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!--events-->
+        <section class="w-full mx-auto px-0 py-10">
+            <!-- Institutional Header / Section Intro -->
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 px-6 md:px-12">
+                <div class="space-y-4">
+                    <span class="text-xl md:text-xl font-medium text-headline-h4  text-[#F8B633] tracking-wider">Calendar</span>
+                    <h1 class="text-3xl md:text-4xl font-semibold text-headline-h1">
+                        Upcoming Events
+                        
+                    </h1>
+                    <div class="h-2 w-28 bg-[#F8B633] mt-2 rounded-full"></div>
+                </div>
+                <a class="group flex items-center gap-3 text-[#0ea5e9] font-semibold text-lg hidden md:flex" href="#">
+                    <span>View All Events</span>
+                    <span class="material-symbols-outlined text-[24px]">trending_flat</span>
+                </a>
+            </div>
+            <!-- Main Content Layout -->
+            <div class="flex flex-col lg:flex-row gap-16 items-start w-full px-12 md:px-12">
+                <!-- Events List Container -->
+                <div class="flex-grow space-y-24">
+                    <!-- Event Item 1 -->
+                    <div class="flex flex-col md:flex-row gap-gutter group">
+                        <!-- Date Column -->
+                        <div class="flex-shrink-0 h-28 md:w-28 flex flex-col items-center md:items-start bg-white p-4 rounded-lg">
+                            <span class="text-[56px] leading-none font-bold text-[#0ea5e9]">20</span>
+                            <span class="text-xl font-bold uppercase tracking-tight text-on-surface">Apr</span>
+                        </div>
+                        <!-- Content Column -->
+                        <div class="flex-grow">
+                            <span class="text-[#F8B633] font-bold text-sm uppercase tracking-wide mb-2 block">Public
+                                Lecture</span>
+                            <h2
+                                class="text-2xl font-bold text-on-background mb-4 transition-colors leading-tight">
+                                Annual Democracy Lecture: Federalism and the Future of Nigeria</h2>
+                            <p class="font-body-sm text-body-sm text-zinc-600 mb-10 leading-relaxed max-w-2xl">
+                                Distinguished scholars and policymakers will examine the state of federal arrangements in
+                                Nigeria and chart a course for equitable governance reform.
+                            </p>
+                            <!-- Actions underneath content -->
+                            <div class="flex flex-wrap items-center gap-12">
+                                <button
+                                    class="bg-[#0ea5e9] text-white font-bold text-sm px-10 py-4 rounded-lg hover:bg-[#158cc9] transition-all active:scale-95">Rsvp
+                                    Now</button>
+                                <a class="flex items-center gap-2 text-[#0ea5e9] hover:text-[#158cc9] font-bold text-sm group/link" href="#">
+                                    View Event Details
+                                    <span
+                                        class="material-symbols-outlined !text-xl transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event Item 2 -->
+                    <div class="flex flex-col md:flex-row gap-gutter group">
+                        <!-- Date Column -->
+                        <div class="flex-shrink-0 h-28 md:w-28 flex flex-col items-center md:items-start bg-white p-4 rounded-lg">
+                            <span class="text-[56px] leading-none font-bold text-[#0ea5e9]">20</span>
+                            <span class="text-xl font-bold uppercase tracking-tight text-on-surface">Apr</span>
+                        </div>
+                        <!-- Content Column -->
+                        <div class="flex-grow">
+                            <span class="text-[#F8B633] font-bold text-sm uppercase tracking-wide mb-2 block">Public
+                                Lecture</span>
+                            <h2
+                                class="text-2xl font-bold text-on-background mb-4 transition-colors leading-tight">
+                                Annual Democracy Lecture: Federalism and the Future of Nigeria</h2>
+                            <p class="font-body-sm text-body-sm text-zinc-600 mb-10 leading-relaxed max-w-2xl">
+                                Distinguished scholars and policymakers will examine the state of federal arrangements in
+                                Nigeria and chart a course for equitable governance reform.
+                            </p>
+                            <!-- Actions underneath content -->
+                            <div class="flex flex-wrap items-center gap-12">
+                                <button
+                                    class="bg-[#0ea5e9] text-white font-bold text-sm px-10 py-4 rounded-lg hover:bg-[#158cc9] transition-all active:scale-95">Rsvp
+                                    Now</button>
+                                <a class="flex items-center gap-2 text-[#0ea5e9] hover:text-[#158cc9] font-bold text-sm group/link" href="#">
+                                    View Event Details
+                                    <span
+                                        class="material-symbols-outlined !text-xl transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event Item 3 -->
+                    <div class="flex flex-col md:flex-row gap-gutter group">
+                        <!-- Date Column -->
+                        <div class="flex-shrink-0 h-28 md:w-28 flex flex-col items-center md:items-start bg-white p-4 rounded-lg">
+                            <span class="text-[56px] leading-none font-bold text-[#0ea5e9]">20</span>
+                            <span class="text-xl font-bold uppercase tracking-tight text-on-surface">Apr</span>
+                        </div>
+                        <!-- Content Column -->
+                        <div class="flex-grow">
+                            <span class="text-[#F8B633] font-bold text-sm uppercase tracking-wide mb-2 block">Public
+                                Lecture</span>
+                            <h2
+                                class="text-2xl font-bold text-on-background mb-4 transition-colors leading-tight">
+                                Annual Democracy Lecture: Federalism and the Future of Nigeria</h2>
+                            <p class="font-body-sm text-body-sm text-zinc-600 mb-10 leading-relaxed max-w-2xl">
+                                Distinguished scholars and policymakers will examine the state of federal arrangements in
+                                Nigeria and chart a course for equitable governance reform.
+                            </p>
+                            <!-- Actions underneath content -->
+                            <div class="flex flex-wrap items-center gap-12">
+                                <button
+                                    class="bg-[#0ea5e9] text-white font-bold text-sm px-10 py-4 rounded-lg hover:bg-[#158cc9] transition-all active:scale-95">Rsvp
+                                    Now</button>
+                                <a class="flex items-center gap-2 text-[#0ea5e9] hover:text-[#158cc9] font-bold text-sm group/link" href="#">
+                                    View Event Details
+                                    <span
+                                        class="material-symbols-outlined !text-xl transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar as per SCREEN_24 -->
+                <aside class="w-full lg:w-[400px] flex-shrink-0 space-y-6  lg:top-32">
+                    <div class="overflow-hidden rounded-xl shadow-lg border border-outline-variant">
+                        <img alt="Institutional Lecture Hall"
+                            class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
+                            src="auditorium.jpg" />
+                    </div>
+                    <button
+                        class="bg-[#0ea5e9] text-white font-nav-link text-nav-link px-8 py-4 rounded-lg hover:bg-[#158cc9] transition-all active:scale-95 w-full shadow-md uppercase tracking-widest">
+                        View Full Calendar
+                    </button>
+                </aside>
+            </div>
+        </section>
+
+        <section class="py-stack-lg mt-section-gap mb-stack-lg">
+<div class="max-w-[1280px] mx-auto px-8 text-center">
+<!-- Small, Orange, Uppercase Text -->
+<p class="text-xl md:text-xl font-medium text-headline-h4  text-[#F8B633] tracking-wider">
+                    Explore Our Department
+                </p>
+<!-- Large, Bold, Dark Grey Title -->
+<h1 class="text-4xl md:text-4xl font-semibold text-headline-h1 mt-2">
+                    Explore Mambayya House
+                </h1>
+<!-- Short, Thick Horizontal Orange Line Accent -->
+<div class="h-2 w-40 bg-[#F8B633] mt-2 rounded-full mx-auto"></div>
+</div>
+</section>
+        <section class="pt-2 pb-section-gap w-full px-4 sm:px-8 md:px-16 lg:px-12 py-10">
+            <!-- Facility Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-24">
+                <!-- Card 1: Auditorium -->
+                        <div class="flex flex-col group cursor-pointer">
+                            <div class="relative h-[480px] overflow-hidden rounded-xl bg-black">
+                                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80"
+                                    data-alt="Auditorium interior"
+                                    src="Auditorium.png" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-6 w-full">
+                                    <h2 class="font-headline-h1 text-4xl text-white font-bold mb-4">Auditorium</h2>
+                                    <p class="text-white text-xs leading-relaxed mb-6 font-normal opacity-90">A world-class conference and
+                                        lecture venue hosting national dialogues, public lectures, symposia, and high-profile governmental
+                                        functions</p>
+                                    <div class="flex gap-4">
+                                        <div class="flex flex-col">
+                                            <span class="text-[#F8B633] font-bold text-sm">500+ Capacity</span>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <span class="text-[#F8B633] font-bold text-sm">120+ Events/yr</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <!-- Card 2: Museum -->
+                <div class="flex flex-col group cursor-pointer">
+                    <div class="relative h-[480px] overflow-hidden rounded-xl bg-black">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80"
+                            data-alt="Museum interior"
+                            src="pillars2.png" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <h2 class="font-headline-h1 text-4xl text-white font-bold mb-4">Museum</h2>
+                            <p class="text-white text-xs leading-relaxed mb-6 font-normal opacity-90">A living archive of Nigeria's
+                                democratic heritage, preserving the life and legacy of Mallam Aminu Kano through artifacts, photographs,
+                                and digital exhibitions.</p>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col">
+                                    <span class="text-[#F8B633] font-bold text-sm">600+ Artifacts</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-[#F8B633] font-bold text-sm">120+ Events/yr</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3: Library -->
+                <div class="flex flex-col group cursor-pointer">
+                    <div class="relative h-[480px] overflow-hidden rounded-xl bg-black">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80"
+                            data-alt="Library interior"
+                            src="library.jpeg" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <h2 class="font-headline-h1 text-4xl text-white font-bold mb-4">Library</h2>
+                            <p class="text-white text-xs leading-relaxed mb-6 font-normal opacity-90">A comprehensive research library
+                                specialising in democracy, political science, law, and Nigerian history, with OPAC access and e-library
+                                services.</p>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col">
+                                    <span class="text-[#F8B633] font-bold text-sm">12K+ Volumes</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-[#F8B633] font-bold text-sm">1.4K eBooks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4: Conference -->
+                <div class="flex flex-col group cursor-pointer">
+                    <div class="relative h-[480px] overflow-hidden rounded-xl bg-black">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80"
+                            data-alt="Conference room"
+                            src="Resturant.png" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-6 w-full">
+                            <h2 class="font-headline-h1 text-4xl text-white font-bold mb-4">Conference</h2>
+                            <p class="text-white text-xs leading-relaxed mb-6 font-normal opacity-90">A comprehensive research library
+                                specialising in democracy, political science, law, and Nigerian history, with OPAC access and e-library
+                                services.</p>
+                            <div class="flex gap-4">
+                                <div class="flex flex-col">
+                                    <span class="text-[#F8B633] font-bold text-sm">12K+ Volumes</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-[#F8B633] font-bold text-sm">1.4K eBooks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Call to Action -->
+            <div class="mt-section-gap flex justify-end">
+               <a class="group flex items-center gap-3 text-[#0ea5e9] font-semibold text-lg" href="#">
+                        <span>View All</span>
+                        <span class="material-symbols-outlined text-[24px]">trending_flat</span>
+                    </a>
+            </div>
+        </section>
+         <div class="flex flex-col md:flex-row justify-between items-end mb-16 px-6 md:px-12">
+                <div class="space-y-4">
+                    <span class="text-xl md:text-xl font-medium text-headline-h4  text-[#F8B633] tracking-wider">KNOWLEDGE REPOSITORY</span>
+                    <h1 class="text-3xl md:text-4xl font-semibold text-headline-h1">
+                        Digital Resources and <br> Archives
+                        
+                    </h1>
+                    <div class="h-2 w-28 bg-[#F8B633] mt-2 rounded-full"></div>
+                </div>
+                <a class="group flex items-center gap-3 text-[#0ea5e9] font-semibold text-lg hidden md:flex" href="#">
+                    
+                </a>
+            </div>
+            <!--Opac section-->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-6 md:px-12">
+                <!-- Column 1: OPAC Catalog -->
+                <div
+                    class="flex flex-col items-center text-center p-12 bg-white rounded-2xl border border-[#0196E2] shadow-sm">
+                    <div class="w-32 h-32 bg-[#F0F9FF] rounded-[2rem] flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-6xl text-[#0196E2]">menu_book</span>
+                    </div>
+                    <h2 class="font-['Work_Sans'] text-2xl font-bold text-[#0196E2] mb-6">OPAC Catalog</h2>
+                    <p class="font-['Work_Sans'] text-base text-zinc-700 leading-relaxed max-w-[280px]">
+                        This paper examines the trajectories of democratic consolidation across six states in Northern Nigeria,
+                        analysing institutional factors, civil society.....
+                    </p>
+                </div>
+                <!-- Column 2: Research Repository -->
+                <div class="flex flex-col items-center text-center p-12 bg-white rounded-2xl">
+                    <div class="w-32 h-32 bg-[#F0F9FF] rounded-[2rem] flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-6xl text-[#0196E2]">content_paste_search</span>
+                    </div>
+                    <h2 class="font-['Work_Sans'] text-2xl font-bold text-[#0196E2] mb-6">Research Repository</h2>
+                    <p class="font-['Work_Sans'] text-base text-zinc-700 leading-relaxed max-w-[280px]">
+                        This paper examines the trajectories of democratic consolidation across six states in Northern Nigeria,
+                        analysing institutional factors, civil society.....
+                    </p>
+                </div>
+                <!-- Column 3: E-library -->
+                <div class="flex flex-col items-center text-center p-12 bg-white rounded-2xl">
+                    <div class="w-32 h-32 bg-[#F0F9FF] rounded-[2rem] flex items-center justify-center mb-8">
+                        <span class="material-symbols-outlined text-6xl text-[#0196E2]">laptop_mac</span>
+                    </div>
+                    <h2 class="font-['Work_Sans'] text-2xl font-bold text-[#0196E2] mb-6">E-library</h2>
+                    <p class="font-['Work_Sans'] text-base text-zinc-700 leading-relaxed max-w-[280px]">
+                        This paper examines the trajectories of democratic consolidation across six states in Northern Nigeria,
+                        analysing institutional factors, civil society.....
+                    </p>
+                </div>
+            </section>
+
+            <section class="max-w-[1280px] mx-auto px-8 pt-[64px] pb-section-gap">
+                <!-- News & Announcements Header -->
+                <div class="mb-12">
+                    <span class="text-[12px] font-bold text-[#D97706] tracking-[0.2em] uppercase block mb-3">LATEST UPDATES</span>
+                    <div class="flex flex-col md:flex-row justify-between items-baseline gap-4">
+                        <div class="flex flex-col">
+                            <h1 class="text-[48px] font-bold text-[#001E3C] leading-none mb-1">News &amp; Announcements</h1>
+                            <div class="w-16 h-1 bg-[#D97706] mt-2"></div>
+                        </div>
+                        <a class="flex items-center gap-2 text-[#1E3A8A] font-bold text-[14px] hover:underline" href="#">
+                            All News
+                            <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- News Grid Matching Image_39 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1: Democracy Forum -->
+                    <article class="flex flex-col bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden">
+                        <div class="bg-[#1E3A8A] aspect-[4/3] flex flex-col items-center justify-center p-8 text-center relative">
+                            <h3 class="text-white text-[32px] font-bold leading-tight opacity-20">Democracy Forum<br />2025</h3>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <time class="text-[12px] font-medium text-slate-400 mb-3">April 8, 2025</time>
+                            <h2 class="text-[18px] font-bold text-[#001E3C] leading-tight mb-4">Mambayya House Hosts the 2025 North
+                                West Democracy Forum with Over 400 Participants</h2>
+                            <p class="text-[14px] text-slate-500 leading-relaxed mb-8">The three-day forum brought together elected
+                                officials, academics, civil society leaders, and citizens to deliberate on the state of democracy
+                                and propose concrete pathways for governance reform in Nigeria's North...</p>
+                            <div class="mt-auto flex justify-between items-center">
+                                <span
+                                    class="bg-[#1E3A8A] text-white text-[10px] font-bold px-3 py-1 rounded-sm tracking-wider">FORUM</span>
+                                <a class="flex items-center gap-1 text-[#1E3A8A] font-bold text-[12px] hover:underline" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Card 2: New Publication -->
+                    <article class="flex flex-col bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden">
+                        <div class="bg-[#065F46] aspect-[4/3] flex flex-col items-center justify-center p-8 text-center relative">
+                            <h3 class="text-white text-[32px] font-bold leading-tight opacity-20">New<br />Publication</h3>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <time class="text-[12px] font-medium text-slate-400 mb-3">March 22, 2025</time>
+                            <h2 class="text-[18px] font-bold text-[#001E3C] leading-tight mb-4">Centre Releases New Policy Brief on
+                                INEC Reform and Electoral Credibility</h2>
+                            <p class="text-[14px] text-slate-500 leading-relaxed mb-8">The latest policy brief from our Research
+                                Department proposes a framework for strengthening INEC's institutional...</p>
+                            <div class="mt-auto flex justify-between items-center">
+                                <span
+                                    class="bg-[#F59E0B] text-black text-[10px] font-bold px-3 py-1 rounded-sm tracking-wider">RESEARCH</span>
+                                <a class="flex items-center gap-1 text-[#1E3A8A] font-bold text-[12px] hover:underline" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Card 3: Partnership -->
+                    <article class="flex flex-col bg-white rounded-lg shadow-sm border border-slate-100 overflow-hidden">
+                        <div class="bg-[#92400E] aspect-[4/3] flex flex-col items-center justify-center p-8 text-center relative">
+                            <h3 class="text-white text-[32px] font-bold leading-tight opacity-20">Partnership</h3>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <time class="text-[12px] font-medium text-slate-400 mb-3">March 10, 2025</time>
+                            <h2 class="text-[18px] font-bold text-[#001E3C] leading-tight mb-4">Mambayya House Signs MOU with Three
+                                African Democracy Institutes</h2>
+                            <p class="text-[14px] text-slate-500 leading-relaxed mb-8">New partnerships with institutes in Ghana,
+                                Senegal, and Kenya will facilitate joint research, staff exchanges, and a shared...</p>
+                            <div class="mt-auto flex justify-between items-center">
+                                <span
+                                    class="bg-[#E0E7FF] text-[#4338CA] text-[10px] font-bold px-3 py-1 rounded-sm tracking-wider uppercase">PARTNERSHIP</span>
+                                <a class="flex items-center gap-1 text-[#1E3A8A] font-bold text-[12px] hover:underline" href="#">
+                                    Read More
+                                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Institutional Partners Section -->
+            <section class="pt-[80px] pb-12 mt-[80px] bg-white">
+                <div class="max-w-[1280px] mx-auto px-12 text-center">
+                    <!-- Heading Component -->
+                    <div class="mb-20 flex flex-col items-center">
+                        <h2 class="text-[10px] font-bold uppercase tracking-[0.4em] text-outline-variant">
+                            INSTITUTIONAL PARTNERS &amp; AFFILIATES
+                        </h2>
+                    </div>
+                    <!-- Top Row of Logos -->
+                    <div class="grid grid-cols-5 gap-x-8 gap-y-12 mb-20 items-end">
+                        <!-- UNDP Nigeria -->
+                        <div class="flex flex-col items-center">
+                            <img alt="UNDP Logo" class="grayscale-logo h-12 w-auto object-contain mb-6"
+                                data-alt="official grayscale logo of the United Nations Development Programme on a clean white background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7jaEpWz1ahEuwhRlV9lx9vUavHVPhHURA_FABDOuNmrf_m5yU12pFtM6ggGRIjQQqPNEYWq5Wip_Rh7EjM5bEo9cpHQlPmGi9qmxW2umjLpajvwhdw46CZv_9T9fEPj3YHzg9BLxwyewQtj-I9R5PYbnh7Os6Xw53glfrxk5L1TLYzd_ooNRQd2o4eCyNLT4t_fkRgT_lAzcbSEWmuiCzNLsvmV-TtxClXYKw0P1q1LDrVIz65Dj29je4dortAgpx4wk987HzJX8" />
+                            <div class="text-center">
+                                <p class="text-[11px] font-bold text-outline-variant uppercase tracking-wider mb-1">UNDP Nigeria</p>
+                                <p class="text-[8px] font-medium text-outline-variant/60 uppercase tracking-[0.1em]">United Nations
+                                    Development</p>
+                            </div>
+                        </div>
+                        <!-- INEC -->
+                        <div class="flex flex-col items-center">
+                            <img alt="INEC Logo" class="grayscale-logo h-12 w-auto object-contain mb-6"
+                                data-alt="professional grayscale emblem of an electoral commission with intricate shield details and sharp typography"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2ndWRuKY2p9u-uUF1GV5srlmX4JkzanZQ5SkYMwGVa1eCB23yIa3yYXuS0RMux-hmBsGUJF5mbDmdac_QvQVZKlbkIkXbxVYSu8zVSwSCFoQE0SplcuxDnUfnJy4AxmVMYWJ970ANpxK02el4dm4aoQG-Ytga8_YEOR6m-MXmPj6reukkYo7XAf-6haMCMWQIO9PUQJRM414_rFql0YR5KYRL3diGui7fCvb1Iy4bLrecCBpN_fqRILhOCjJI_q4ZKfM4uCzeDXw" />
+                            <div class="text-center">
+                                <p class="text-[11px] font-bold text-outline-variant uppercase tracking-wider mb-1">INEC</p>
+                                <p class="text-[8px] font-medium text-outline-variant/60 uppercase tracking-[0.1em]">Electoral
+                                    Commission</p>
+                            </div>
+                        </div>
+                        <!-- European Union -->
+                        <div class="flex flex-col items-center">
+                            <img alt="European Union Logo" class="grayscale-logo h-12 w-auto object-contain mb-6"
+                                data-alt="the european union flag emblem in a minimalist grayscale vector style with stars in a circle"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI-vxvHzgMuj8QSXyb9-51TMa0PNYPfi3CFiv-NQxnsa6fl8srF41tP6mky8oXdLw1GSK8Aq4OkPe0_Jz_14wNjA25diPyBq9GZ02rRtxXynn4u2RrsacfDWJEOj4JiyYj5JSDEgxRNC6Fipva36CQPdB41pUrpXXrdsGMch2g6_X2_WolnQb73FWaajLiQRz-bAutwWE77XiG_izdEl3vC2muWCMaC9goOA3R26X1Dba6wdeiuz9RyY3WR9uQscjwUggGBrrZXZE" />
+                            <div class="text-center">
+                                <p class="text-[11px] font-bold text-outline-variant uppercase tracking-wider mb-1">European Union
+                                </p>
+                                <p class="text-[8px] font-medium text-outline-variant/60 uppercase tracking-[0.1em]">EU Democracy
+                                    Programme</p>
+                            </div>
+                        </div>
+                        <!-- NTA -->
+                        <div class="flex flex-col items-center">
+                            <img alt="NTA Logo" class="grayscale-logo h-10 w-auto object-contain mb-8"
+                                data-alt="modernist television authority logo in grayscale with bold sans-serif lettering and geometric shapes"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV26n06S9iSVnowviIOSweQ8bBnr7c5ry-mGxW83k1BpiamJ7Csz4mfm59H-aAv-tyc6R1SWGNRWGUuyUcW9SmxUOJQC7yEFS76QGi8_64p4t21Ek9g5X6SqMXeLpe_q_xtgclwmd7g0mGjp_Ww5NhHCOzSbwVMYtBXLCNy1WOrps1C6WKdNVbwb8bCBDhqCe66IS7cd9x-xp8GxOGu0FM4XXwdQjbWrUYiA5VEFMRtoAyP6ENW6VknW9zUmfoHvttdOTOj-ipxy0" />
+                            <div class="text-center">
+                                <p class="text-[11px] font-bold text-outline-variant uppercase tracking-wider mb-1">NTA</p>
+                                <p class="text-[8px] font-medium text-outline-variant/60 uppercase tracking-[0.1em]">Nigerian
+                                    Television Authority</p>
+                            </div>
+                        </div>
+                        <!-- BUK -->
+                        <div class="flex flex-col items-center">
+                            <img alt="BUK Logo" class="grayscale-logo h-12 w-auto object-contain mb-6"
+                                data-alt="institutional university crest logo in grayscale with detailed heraldic elements and academic symbols"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmR7JaH3SJSUhV0dDWkOG-flp3FYBiphanfHmeFWYTZyWkYFjII43RHADJbO8UQNQzwMyJ2-4SPM7fHf6OhJb12iYwdUtTpbO4R8Xa5d_-otP-AuyRbtSumytP0knyQ6VEvBZ0aj2MESGTvjOLPJjuS8K903ubzcGWvcTL_yJvK-i2kvqnO1IvdOnVv95GNEpOAyg52bG1ZuPuCNpPi4CXznbwRYpakqXQ09tZvr7yIGLFLw5TtheXT2qTSpZMB99R68MHtCWlfTc" />
+                            <div class="text-center">
+                                <p class="text-[11px] font-bold text-outline-variant uppercase tracking-wider mb-1">BUK</p>
+                                <p class="text-[8px] font-medium text-outline-variant/60 uppercase tracking-[0.1em]">Bayero
+                                    University Kano</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bottom Row of Logos -->
+                    <div class="flex justify-center gap-x-32 items-end">
+                        <!-- NDI -->
+                        <div class="flex flex-col items-center">
+                            <img alt="NDI Logo" class="grayscale-logo h-10 w-auto object-contain mb-8"
+                                data-alt="grayscale international democratic institute logo featuring a clean minimalist globe icon and professional typography"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG-QyS4aAuqwpGv1GSYztlFEXDAGc8spff7OUFMCo_66-tdZOrIPpJiJJ_7KQDELym3kRkjpEFO6yrEwJeuMnrZT5Oucdh6l7RHF2EeorVA7TpR04hR4dTfq2kCSp11qXv_5T3NAE_WbG22zgNKV5QZwVd5jDZuwR9OzQzN7xvIRPiXgIR26p0TUCzwn0B2ZOUUkCqh6D-x8If3eJE6xHOgqN1wNiQImujx_4zYjOJ5Wm5gEiKZZ4g1eG6O2D5pky7CycMIxWIE2s" />
+                            <div class="text-center">
+                                <p class="text-[11px] font-bold text-outline-variant uppercase tracking-wider mb-1">NDI</p>
+                                <p class="text-[8px] font-medium text-outline-variant/60 uppercase tracking-[0.1em]">National
+                                    Democratic Institute</p>
+                            </div>
+                        </div>
+                        <!-- NILDS -->
+                        <div class="flex flex-col items-center">
+                            <img alt="NILDS Logo" class="grayscale-logo h-12 w-auto object-contain mb-6"
+                                data-alt="legislative studies institute logo in grayscale with a refined coat of arms and formal lettering"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlkUNzIjgKn_jsOC_BBw8k5qjE8oDUCThholjoyyA3n7Bd75hS6vlGdswr1bbFL2ehh2XfN5_9U6zDvjvvl-5oUl77X6tYA32xNMgF6-G33cUfbbtdofKmZ-_DcbLtEc1d1tZsv3Ptfl9GDOXfdi8Gbzucuy_YAWyCdlLwQ80U11SwHN2Sd9h7YnRpmPTKRf75eCamGIbV3pQ-Ca6HddlzThLjDU7vUn-qnEQt-Qy1_8lqIq7KuMMmK8PJZlXsqJnEyL17l9K4erU" />
+                            <div class="text-center">
+                                <p class="text-[11px] font-bold text-outline-variant uppercase tracking-wider mb-1">NILDS</p>
+                                <p class="text-[8px] font-medium text-outline-variant/60 uppercase tracking-[0.1em]">National
+                                    Institute</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Content Flow -->
+            <section class="flex flex-col md:flex-row gap-16 items-center">
+                    <!-- Floating Controls: bottom-right of the hero (desktop) -->
+                    <div class="absolute left-1/2 -translate-x-1/2 bottom-0 z-20 w-[92%] max-w-[500px] md:left-auto md:right-12 md:translate-x-0 md:bottom-20 lg:bottom-20 hidden md:block">
+                        <div class="grid grid-cols-[1fr_auto] items-center gap-4">
+                            <!-- Search Box -->
+                            <div class="flex items-center justify-between bg-[#E5E5E5] text-black px-6 py-4 rounded-lg w-full cursor-pointer shadow-md">
+                                <span class="text-lg font-medium">Search</span>
+                                <span class="material-symbols-outlined text-gray-600">expand_more</span>
+                            </div>
+
+                            <!-- Button -->
+                            <button class="bg-[#009EE2] text-white px-8 py-4 rounded-md font-bold text-lg whitespace-nowrap hover:bg-[#007cb3] transition-all active:scale-95">
+                                Portal Login
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Updated Footer to match IMAGE_40 -->
+        <footer class="bg-[#050b2c] text-white font-['Work_Sans'] w-full">
+            <div class="max-w-[1280px] mx-auto px-8 py-16">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <!-- Column 1: Company Info -->
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 bg-white p-2">
+                            <img alt="Mambaya House Logo" class="h-12 w-auto object-contain" src="image 93.png" />
+                            <div class="flex flex-col">
+                                <span class="text-2xl md:text-xl font-black text-[#f87171] tracking-tight leading-none uppercase">MAMBAYA
+                                    HOUSE</span>
+                                <span class="text-[10px] md:text-[12px] font-medium text-[#166534] tracking-tight mt-1">Aminu Kano Centre For
+                                    Democratic Studies</span>
+                            </div>
+                        </div>
+                        <p class="text-[13px] text-slate-400 leading-relaxed max-w-xs">
+                            A premier institution advancing democratic governance, policy research, civic education, and the
+                            preservation of Nigeria's rich democratic heritage since its establishment.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-orange-400 text-base mt-0.5"
+                                    data-icon="location_on">location_on</span>
+                                <span class="text-[13px] text-slate-400">Mambayya House, No. 1 Aminu Kano Way, Kano,
+                                    Nigeria</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-orange-400 text-base" data-icon="mail">mail</span>
+                                <span class="text-[13px] text-slate-400">info@mambayyahouse.gov.ng</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-orange-400 text-base" data-icon="call">call</span>
+                                <span class="text-[13px] text-slate-400">+234 (064) 123 456</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 pt-2">
+                            <a class="w-8 h-8 border border-slate-700 flex items-center justify-center hover:bg-slate-800 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-[14px]" data-icon="close">close</span>
+                            </a>
+                            <a class="w-8 h-8 border border-slate-700 flex items-center justify-center hover:bg-slate-800 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-[14px]" data-icon="person">person</span>
+                            </a>
+                            <a class="w-8 h-8 border border-slate-700 flex items-center justify-center hover:bg-slate-800 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-[14px]" data-icon="groups">groups</span>
+                            </a>
+                            <a class="w-8 h-8 border border-slate-700 flex items-center justify-center hover:bg-slate-800 transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined text-[14px]" data-icon="play_arrow">play_arrow</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Column 2: QUICK LINKS -->
+                    <div class="space-y-6">
+                        <h3 class="text-xs font-bold tracking-[0.15em] text-white uppercase">QUICK LINKS</h3>
+                        <ul class="space-y-4">
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">About Mambayya
+                                    House</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Director's
+                                    Office</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Our
+                                    Departments</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Governance</a>
+                            </li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Strategic
+                                    Plan</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Annual
+                                    Reports</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Column 3: RESOURCES -->
+                    <div class="space-y-6">
+                        <h3 class="text-xs font-bold tracking-[0.15em] text-white uppercase">RESOURCES</h3>
+                        <ul class="space-y-4">
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Library
+                                    Catalog (OPAC)</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Publications
+                                    Repository</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">eLibrary</a>
+                            </li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Museum
+                                    Archive</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Research
+                                    Archive</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Training
+                                    Courses</a></li>
+                            <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Events
+                                    Calendar</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4: PORTAL ACCESS & OPENING HOURS -->
+                    <div class="space-y-12">
+                        <div class="space-y-6">
+                            <h3 class="text-xs font-bold tracking-[0.15em] text-white uppercase">PORTAL ACCESS</h3>
+                            <ul class="space-y-4">
+                                <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Guest
+                                        Access</a></li>
+                                <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Library
+                                        Member Login</a></li>
+                                <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Staff
+                                        Portal</a></li>
+                                <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Admin
+                                        Dashboard</a></li>
+                                <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">Research
+                                        Submission</a></li>
+                                <li><a class="text-[13px] text-slate-400 hover:text-white transition-colors" href="#">RSVP for
+                                        Events</a></li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h3 class="text-xs font-bold tracking-[0.15em] text-white uppercase">OPENING HOURS</h3>
+                            <div class="space-y-1">
+                                <p class="text-[11px] text-slate-500 uppercase tracking-wide">Monday – Friday</p>
+                                <p class="text-[13px] text-slate-300 font-medium">8:00 AM – 5:00 PM</p>
+                            </div>
+                            <div class="space-y-1">
+                                <p class="text-[11px] text-slate-500 uppercase tracking-wide">Saturday</p>
+                                <p class="text-[13px] text-slate-300 font-medium">9:00 AM – 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Copyright Bar -->
+            <div class="border-t border-slate-800/30 py-8">
+                <div class="max-w-[1280px] mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="text-[12px] text-slate-500 leading-relaxed max-w-lg">
+                        © 2025 Mambayya House – Aminu Kano Centre for Democratic Studies. All rights reserved.<br />
+                        Built with institutional integrity by <span class="text-orange-500/80">MasqIT Solutions.</span>
+                    </div>
+                    <div class="flex gap-6 text-[12px] text-slate-500">
+                        <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+                        <a class="hover:text-white transition-colors" href="#">Terms of Use</a>
+                        <a class="hover:text-white transition-colors" href="#">Accessibility</a>
+                        <a class="hover:text-white transition-colors" href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
